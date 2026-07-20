@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Header } from "./components";
-import { Playfair_Display } from "next/font/google";
+import { Footer, Header } from "./components";
+import { Playfair_Display, Montserrat } from "next/font/google";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
   variable: "--font-playfair",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-montserrat",
 });
 
 export const metadata: Metadata = {
@@ -20,10 +26,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable} h-full antialiased`}>
+    <html
+      lang="en"
+      className={`${playfair.variable} ${montserrat.variable} h-full antialiased`}
+    >
       <body className="min-h-full flex flex-col">
         <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   );

@@ -35,17 +35,17 @@ const Instagram = () => {
             y2="-1.42709"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#FFDB73" />
-            <stop offset="0.08" stop-color="#FDAD4E" />
-            <stop offset="0.15" stop-color="#FB832E" />
-            <stop offset="0.19" stop-color="#FA7321" />
-            <stop offset="0.23" stop-color="#F6692F" />
-            <stop offset="0.37" stop-color="#E84A5A" />
-            <stop offset="0.48" stop-color="#E03675" />
-            <stop offset="0.55" stop-color="#DD2F7F" />
-            <stop offset="0.68" stop-color="#B43D97" />
-            <stop offset="0.97" stop-color="#4D60D4" />
-            <stop offset="1" stop-color="#4264DB" />
+            <stop stopColor="#FFDB73" />
+            <stop offset="0.08" stopColor="#FDAD4E" />
+            <stop offset="0.15" stopColor="#FB832E" />
+            <stop offset="0.19" stopColor="#FA7321" />
+            <stop offset="0.23" stopColor="#F6692F" />
+            <stop offset="0.37" stopColor="#E84A5A" />
+            <stop offset="0.48" stopColor="#E03675" />
+            <stop offset="0.55" stopColor="#DD2F7F" />
+            <stop offset="0.68" stopColor="#B43D97" />
+            <stop offset="0.97" stopColor="#4D60D4" />
+            <stop offset="1" stopColor="#4264DB" />
           </linearGradient>
         </defs>
       </svg>

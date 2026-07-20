@@ -79,7 +79,7 @@ export function ThemeButton({
         }}
       >
         {leftIcon}
-        <span className="leading-[100%]">{label}</span>
+        <span className="leading-[100%] font-montserrat">{label}</span>
         {rightIcon}
         {/* <RightArrow width={15} height={12} color={color} /> */}
       </span>

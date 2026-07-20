@@ -1,12 +1,6 @@
 import Image from "next/image";
-import { checkmark } from "@/public/icons";
 import { images } from "./ui";
-import Header from "./components/header";
-import { AboutSection, HeroSection } from "./components";
-import MenuSection from "./components/MenuSection";
-import ReviewSection from "./components/ReviewSection";
-import FindUsOnline from "./components/FindUsOnline";
-import BrandHighlightSection from "./components/BrandHighlightSection";
+import { AboutSection, BrandHighlightSection, FindUsOnline, HeroSection, LocationSection, MenuCategoriesSection, MenuSection, ReviewSection, TakeABoxSection } from "./components";
 
 export default function Home() {
   return (
@@ -35,7 +29,7 @@ export default function Home() {
         height={200}
         className="
         absolute
-         top-[10%]
+         top-[1%]
          -left-22
          opacity-75
          blur-xs
@@ -49,8 +43,11 @@ export default function Home() {
       <AboutSection />
       <MenuSection />
       <ReviewSection />
-      <FindUsOnline />
-      <BrandHighlightSection/>
+      <FindUsOnline/>
+      <BrandHighlightSection />
+      <LocationSection />
+      <MenuCategoriesSection />
+      <TakeABoxSection/>
     </div>
   );
 }

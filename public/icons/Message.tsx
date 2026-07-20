@@ -47,8 +47,8 @@ const Message = () => {
             y2="34.7711"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#B32B49" />
-            <stop offset="1" stop-color="#800029" />
+            <stop stopColor="#B32B49" />
+            <stop offset="1" stopColor="#800029" />
           </linearGradient>
           <linearGradient
             id="paint1_linear_112_532"
@@ -58,8 +58,8 @@ const Message = () => {
             y2="12.6341"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-opacity="0" />
-            <stop offset="1" stop-color="#0075CD" />
+            <stop stopOpacity="0" />
+            <stop offset="1" stopColor="#0075CD" />
           </linearGradient>
           <linearGradient
             id="paint2_linear_112_532"
@@ -69,8 +69,8 @@ const Message = () => {
             y2="12.6339"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-opacity="0" />
-            <stop offset="1" stop-color="#0075CD" />
+            <stop stopOpacity="0" />
+            <stop offset="1" stopColor="#0075CD" />
           </linearGradient>
           <linearGradient
             id="paint3_linear_112_532"
@@ -80,8 +80,8 @@ const Message = () => {
             y2="12.6341"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-opacity="0" />
-            <stop offset="1" stop-color="#0075CD" />
+            <stop stopOpacity="0" />
+            <stop offset="1" stopColor="#0075CD" />
           </linearGradient>
         </defs>
       </svg>
