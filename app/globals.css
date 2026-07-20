@@ -10,6 +10,11 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-wine-red: #800029;
+  --color-Dune: #333333;
+  --color-Egg-White:#FFF2C5;
+  --color-Bright-Maroon: #B32B49;
+  --text-8xl: 5.625rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +27,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-playfair);
 }
