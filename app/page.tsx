@@ -87,7 +87,17 @@ export default function Home() {
       <ReviewSection />
       <FindUsOnline/>
       <BrandHighlightSection />
-      <LocationSection />
+      {/* location section */}
+       <LocationSection
+      innerPadding="py-24"
+      title={
+        <>
+          Unfolding <span className="text-wine-red">near you soon.</span>
+        </>
+      }
+      description="We’re starting with fresh bakes, coffee and matcha in busy everyday places — and more Fold locations are on the way."
+      buttonLabel="Find Your Nearest Fold"
+    />
       <MenuCategoriesSection />
       <TakeABoxSection/>
     </div>

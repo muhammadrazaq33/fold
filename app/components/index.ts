@@ -28,5 +28,5 @@ export {
   CategoryCards,
   TakeABoxSection,
   Footer,
-  CurrentLocationSection
+  CurrentLocationSection,
 };

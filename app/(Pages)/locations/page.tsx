@@ -1,6 +1,6 @@
 "use client"
 
-import { CurrentLocationSection, HeroSection, ThemeButton } from '@/app/components'
+import { CurrentLocationSection, HeroSection, LocationSection, ThemeButton } from '@/app/components'
 import RightArrow from '@/public/icons/RightArrow';
 
 const locations = () => {
@@ -46,6 +46,18 @@ const locations = () => {
 
     {/*current location section  */}
     <CurrentLocationSection/>
+<LocationSection
+      sectionPadding="py-16 px-8"
+      innerPadding="py-16"
+      title={
+        <>
+          Unfolding <span className="text-wine-red">near you soon.</span>
+        </>
+      }
+      description={`More Fold locations are on the way.
+Follow us for openings, specials and fresh bakes near you.`}
+      buttonLabel="Follow Fold on Instagram"
+    />
     </div>
   )
 }
