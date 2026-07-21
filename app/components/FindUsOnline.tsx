@@ -4,7 +4,7 @@ import { ThemeButton } from "./buttons/ThemeButton";
 import Image from "next/image";
 import { images } from "../ui";
 
-export const FindUsOnline = () => {
+export  const FindUsOnline = () => {
   return <div className="px-8 pb-16">
     <div className="p-16 rounded-[64px] bg-wine-red relative bg-[url('/images/findUsBg.png')] bg-contain bg-no-repeat bg-center overflow-hidden">
       <div className="container max-w-7xl mx-auto p-8 flex flex-col gap-14 relative overflow-hidden">

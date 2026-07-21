@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
+import RightArrow from "@/public/icons/RightArrow";
+import { AboutSection, BrandHighlightSection, FindUsOnline, HeroSection, LocationSection, MenuCategoriesSection, MenuSection, ReviewSection, TakeABoxSection, ThemeButton } from "./components";
 import { images } from "./ui";
-import { AboutSection, BrandHighlightSection, FindUsOnline, HeroSection, LocationSection, MenuCategoriesSection, MenuSection, ReviewSection, TakeABoxSection } from "./components";
 
 export default function Home() {
   return (
@@ -15,8 +18,7 @@ export default function Home() {
               absolute
                -top-15
                -right-20
-               opacity-75
-               blur-xs
+               opacity-77
                pointer-events-none
                select-none
                z-1000"
@@ -31,14 +33,54 @@ export default function Home() {
         absolute
          top-[1%]
          -left-22
-         opacity-75
-         blur-xs
+         opacity-77
          pointer-events-none
          select-none
          z-50"
       />
       <div className="">
-        <HeroSection />
+        <HeroSection showCookie>
+      <div className="grid grid-cols-2 gap-16">
+        {/* first column */}
+        <div className="flex flex-col gap-8 justify-center">
+          <p className="text-[90px] font-extrabold text-Dune font-playfair leading-none">
+            Fresh Bakes. <span className="text-wine-red">Daily Rituals.</span>
+          </p>
+
+          <div className="flex flex-row gap-5">
+            <ThemeButton
+              label="See The Menu"
+              bgcolor="#B32B49"
+              color="#fff"
+              onClick={() => {}}
+              rightIcon={<RightArrow width={15} height={12} color="#fff" />}
+              fontSize={20}
+              paddingX={28}
+              paddingY={12}
+            />
+
+            <ThemeButton
+              label="Find us"
+              bgcolor="#333333"
+              color="#fff"
+              onClick={() => {}}
+              rightIcon={<RightArrow width={15} height={12} color="#fff" />}
+              fontSize={20}
+              paddingX={28}
+              paddingY={12}
+            />
+          </div>
+        </div>
+
+        {/* second column */}
+        <div>
+          <Image
+            src={images.landingimages.heroimage}
+            alt="hero image"
+          />
+        </div>
+      </div>
+    </HeroSection>
       </div>
       <AboutSection />
       <MenuSection />

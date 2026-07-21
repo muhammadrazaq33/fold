@@ -6,7 +6,7 @@ type ThemeButtonProps = {
   icon?: ReactNode;
   bgcolor: string;
   color: string;
-  onClick: () => void;
+  onClick?: () => void;
   leftIcon?: ReactNode;
   rightIcon?: ReactNode;
   fontSize: number;

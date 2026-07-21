@@ -16,7 +16,7 @@ const supportLinks = [
 
 const Footer = () => {
   return (
-    <footer className="bg-wine-red px-25 pt-17 pb-8 rounded-tl-[56px] rounded-tr-[56px] relative overflow-hidden">
+    <footer className="bg-wine-red px-25 pt-17 pb-8 rounded-tl-[56px] rounded-tr-[56px] relative overflow-hidden mt-28">
       <div className="absolute -top-15 right-0 w-125 h-137.5 opacity-[0.27]">
         <Image
           src={images.landingimages.FooterBg}
