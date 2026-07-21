@@ -33,7 +33,7 @@ const HeroSection = ({
         />
       )}
 
-      <div className="relative container max-w-7xl mx-auto px-8 pt-[140px] pb-10 gap-16">
+      <div className="relative container max-w-7xl mx-auto px-8 pt-35 pb-10 gap-16">
         {children}
       </div>
     </div>
