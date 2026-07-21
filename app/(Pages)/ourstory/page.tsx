@@ -46,19 +46,20 @@ const OurStory = () => {
     </HeroSection>
 
     {/*about section  */}
-       <AboutSection
-       rootPadding="pb-12"
-      image={images.landingimages.aboutImg}
-      title={
-        <>
-          Fold began with <span className="text-wine-red">a simple belief.</span>
-        </>
-      }
-      paragraphs={[
-        "Fresh bakes should actually be fresh. The best food rituals are often the smallest ones. The coffee before work. The matcha on the move. The warm bun you look forward to in the afternoon. The box you take back for everyone else, even though one somehow disappears on the way. That's what Fold is built around.",
-        "Every day, we start again. Doughs are mixed, proofed, baked, filled and finished from scratch, ready to be served that same day.",
-      ]}
-    />
+     <AboutSection
+  rootPadding="pb-12 pt-24"
+  headingClassName="leading-15"
+  image={images.landingimages.aboutImg}
+  title={
+    <>
+      Fold began with <span className="text-wine-red">a simple belief.</span>
+    </>
+  }
+  paragraphs={[
+    "Fresh bakes should actually be fresh. The best food rituals are often the smallest ones. The coffee before work. The matcha on the move. The warm bun you look forward to in the afternoon. The box you take back for everyone else, even though one somehow disappears on the way. That’s what Fold is built around.",
+    "Every day, we start again. Doughs are mixed, proofed, baked, filled and finished from scratch, ready to be served that same day.",
+  ]}
+/>
     {/*  */}
     <div className="container max-w-7xl mx-auto px-8">
 <div className="grid grid-cols-2 gap-12">

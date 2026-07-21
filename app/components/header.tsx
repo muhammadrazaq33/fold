@@ -11,9 +11,9 @@ import RightArrow from "@/public/icons/RightArrow";
 const navItems = [
   { name: "Home", href: "/" },
   { name: "Menu", href: "/menu" },
-  { name: "Locations", href: "/##" },
-  { name: "Work With Us", href: "/####" },
-  { name: "Contact", href: "/#####" },
+  { name: "Locations", href: "/locations" },
+  { name: "Work With Us", href: "/workwithus" },
+  { name: "Contact", href: "/contact" },
 ];
 
 const Header = () => {

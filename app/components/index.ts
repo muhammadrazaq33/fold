@@ -12,6 +12,9 @@ import CategoryCards from "./CategoryCards";
 import TakeABoxSection from "./TakeABoxSection";
 import Footer from "./Footer";
 import CurrentLocationSection from "./CurrentLocationSection";
+import ContactRoutesSection from "./ContactRoutesSection";
+import ContactForm from "./ContactForm";
+import WorkWithUsSection from "./WorkWithUsSection";
 
 
 export {
@@ -29,4 +32,7 @@ export {
   TakeABoxSection,
   Footer,
   CurrentLocationSection,
+  ContactRoutesSection,
+  ContactForm,
+  WorkWithUsSection
 };

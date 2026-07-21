@@ -83,20 +83,22 @@ export default function Home() {
     </HeroSection>
       </div>
      {/* About Section */}
-      <AboutSection
-      rootPadding="py-24"
-      showLabel
-      image={images.landingimages.aboutImg}
-      title={
-        <>
-          Freshly folded, <span className="text-wine-red">every day.</span>
-        </>
-      }
-      paragraphs={[
-        "Our bakes are made fresh from scratch each day, served from counters full of cookies, buns, doughnuts and seasonal specials.",
-        "Grab a coffee before work, pick up a matcha on the go, or take a box of bakes back for the office. Fresh, generous and easy to love — that's Fold.",
-      ]}
-    />
+     <AboutSection
+  rootPadding="py-24"
+  showLabel
+  label="About"
+  headingClassName="leading-none"
+  image={images.landingimages.aboutImg}
+  title={
+    <>
+      Freshly folded, <span className="text-wine-red">every day.</span>
+    </>
+  }
+  paragraphs={[
+    "Our bakes are made fresh from scratch each day, served from counters full of cookies, buns, doughnuts and seasonal specials.",
+    "Grab a coffee before work, pick up a matcha on the go, or take a box of bakes back for the office. Fresh, generous and easy to love — that's Fold.",
+  ]}
+/>
       <MenuSection />
       <ReviewSection />
       <FindUsOnline/>

@@ -10,8 +10,8 @@ const CurrentLocationSection = () => {
             {/*left side   */}
             <div className='flex flex-col gap-7'>
                 <div className='flex flex-col gap-2.5'>
-                     <div className="flex flex-row gap-1.5 items-center">
-            <p className="text-5 text-Bright-Maroon font-normal font-montserrat">Current Location</p>
+                     <div className="flex flex-row gap-2.5 items-center">
+            <p className="text-[20px] leading-[120%] text-Bright-Maroon font-normal font-montserrat">Current Location</p>
             <p className="w-29.25 h-0 border [border-image:linear-gradient(90deg,#800029_0%,rgba(255,242,197,0)_100%)_1]"></p>
           </div>
             <p className="font-extrabold text-[58px] capitalize text-Dune leading-none font-playfair">
