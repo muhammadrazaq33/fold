@@ -48,7 +48,34 @@ const Footer = () => {
                     <li key={link.label}>
                       <Link
                         href={link.href}
-                        className="font-montserrat font-normal text-4 leading-5.5 text-neutral-100"
+                        className="
+  relative
+  inline-block
+  font-montserrat
+  font-normal
+  text-4
+  leading-5.5
+  text-neutral-100
+
+  transition-all
+duration-700
+ease-[cubic-bezier(0.22,1,0.36,1)]
+hover:opacity-80
+
+  after:absolute
+  after:left-1/2
+  after:-translate-x-1/2
+  after:-bottom-1
+  after:h-0.5
+  after:w-0
+  after:bg-white
+  after:rounded-full
+  after:transition-all
+  after:duration-700
+  after:ease-[cubic-bezier(0.22,1,0.36,1)]
+
+  hover:after:w-full
+"
                       >
                         {link.label}
                       </Link>
@@ -65,7 +92,34 @@ const Footer = () => {
                     <li key={link.label}>
                       <Link
                         href={link.href}
-                        className="font-montserrat font-normal text-4 leading-5.5 text-neutral-100"
+                        className="
+  relative
+  inline-block
+  font-montserrat
+  font-normal
+  text-4
+  leading-5.5
+  text-neutral-100
+
+  transition-all
+duration-700
+ease-[cubic-bezier(0.22,1,0.36,1)]
+hover:opacity-80
+
+  after:absolute
+  after:left-1/2
+  after:-translate-x-1/2
+  after:-bottom-1
+  after:h-0.5
+  after:w-0
+  after:bg-white
+  after:rounded-full
+  after:transition-all
+  after:duration-700
+  after:ease-[cubic-bezier(0.22,1,0.36,1)]
+
+  hover:after:w-full
+"
                       >
                         {link.label}
                       </Link>
@@ -82,12 +136,39 @@ const Footer = () => {
               <p className="font-montserrat font-normal text-3.5 leading-6 text-white">
                 FOLD — Coffee • Bakes • Matcha
               </p>
-              <a
-                href="mailto:info@foldbakery.co.uk"
-                className="font-montserrat font-normal text-3.5 leading-6 text-white cursor-pointer"
-              >
-                info@foldbakery.co.uk
-              </a>
+             <Link
+  href="mailto:info@foldbakery.co.uk"
+  className="
+    relative
+    inline-block
+
+    font-montserrat
+    font-normal
+    text-3.5
+    leading-6
+    text-white
+
+    transition-all
+    duration-700
+    ease-[cubic-bezier(0.22,1,0.36,1)]
+    hover:opacity-90
+
+    after:absolute
+    after:left-1/2
+    after:-translate-x-1/2
+    after:-bottom-1
+    after:h-0.5
+    after:w-0
+    after:bg-white
+    after:rounded-full
+    after:transition-all
+    after:duration-700
+    after:ease-[cubic-bezier(0.22,1,0.36,1)]
+    hover:after:w-full
+  "
+>
+  info@foldbakery.co.uk
+</Link>
             </div>
           </div>
         </div>

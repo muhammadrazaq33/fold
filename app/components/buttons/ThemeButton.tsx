@@ -17,7 +17,6 @@ type ThemeButtonProps = {
 
 export function ThemeButton({
   label = "Find us",
-  icon = "→",
   bgcolor = "#B32B49",
   color = "#fff",
   onClick,
@@ -29,21 +28,48 @@ export function ThemeButton({
   paddingY = 14,
 }: ThemeButtonProps) {
   return (
-    <button type={type}
-      onClick={onClick}
-      style={{
-        position: "relative",
-        display: "inline-flex",
-        alignItems: "center",
-        justifyContent: "center",
-        gap: 10,
-        border: "none",
-        background: "transparent",
-        cursor: "pointer",
-        padding: `${paddingY}px ${paddingX}px`,
-        fontFamily: "inherit",
-      }}
-    >
+  <button
+  type={type}
+  onClick={onClick}
+  className="
+    group
+    relative
+    inline-flex
+    items-center
+    justify-center
+
+    transition-all
+duration-700
+ease-[cubic-bezier(0.22,1,0.36,1)]
+hover:opacity-90
+
+    after:absolute
+    after:left-1/2
+    after:-translate-x-1/2
+    after:-bottom-2.5
+
+    after:h-0.5
+    after:w-0
+
+    after:bg-(--underline-color)
+    after:rounded-full
+
+    after:transition-all
+    after:duration-700
+    after:ease-[cubic-bezier(0.22,1,0.36,1)]
+
+    hover:after:w-[90%]
+  "
+  style={{
+    background: "transparent",
+    border: "none",
+    cursor: "pointer",
+    padding: `${paddingY}px ${paddingX}px`,
+    fontFamily: "inherit",
+    color: color,
+     "--underline-color": bgcolor,
+  } as React.CSSProperties}
+>
       <svg
         viewBox="0 0 269 56"
         preserveAspectRatio="none"
@@ -73,7 +99,7 @@ export function ThemeButton({
           justifyContent: "center",
           width: "100%",
           height: "100%",
-          gap: 8,
+          gap: 1.5,
           color: `${color}`,
           fontWeight: 700,
           fontSize,
@@ -82,7 +108,17 @@ export function ThemeButton({
       >
         {leftIcon}
         <span className="leading-none font-montserrat">{label}</span>
-        {rightIcon}
+<span
+  className="
+    ml-2
+    transition-transform
+    duration-700
+    ease-[cubic-bezier(0.22,1,0.36,1)]
+    group-hover:translate-x-1.5
+  "
+>
+  {rightIcon}
+</span>
         {/* <RightArrow width={15} height={12} color={color} /> */}
       </span>
     </button>

@@ -22,21 +22,20 @@ const Header = () => {
 
   const [isScrolled, setIsScrolled] = useState(false);
 
-useEffect(() => {
-  const hero = document.getElementById("hero-section");
+ useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY >= 100);
+    };
 
-  const handleScroll = () => {
-    if (!hero) return;
+    // Check scroll position on initial render
+    handleScroll();
 
-    const heroHeight = hero.offsetHeight;
+    window.addEventListener("scroll", handleScroll);
 
-    setIsScrolled(window.scrollY > heroHeight - 80);
-  };
-
-  window.addEventListener("scroll", handleScroll);
-
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
 console.log(isScrolled);
   return (

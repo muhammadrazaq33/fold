@@ -14,7 +14,6 @@ import Footer from "./Footer";
 import CurrentLocationSection from "./CurrentLocationSection";
 import ContactRoutesSection from "./ContactRoutesSection";
 import ContactForm from "./form/ContactForm";
-import WorkWithUsSection from "./WorkWithUsSection";
 import SliderCard from "./SliderCard";
 
 
@@ -35,6 +34,5 @@ export {
   CurrentLocationSection,
   ContactRoutesSection,
   ContactForm,
-  WorkWithUsSection,
   SliderCard
 };
