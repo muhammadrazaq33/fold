@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Footer, Header } from "./components";
-import { Playfair_Display, Montserrat } from "next/font/google";
+import { Playfair_Display, Montserrat,Manrope } from "next/font/google";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -13,6 +13,12 @@ const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-montserrat",
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-manrope",
 });
 
 export const metadata: Metadata = {
@@ -28,7 +34,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${montserrat.variable} h-full antialiased`}
+      className={`${playfair.variable} ${montserrat.variable} ${manrope.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <Header />

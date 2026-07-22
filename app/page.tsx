@@ -7,37 +7,7 @@ import { images } from "./ui";
 
 export default function Home() {
   return (
-    <div className="relative overflow-x-hidden  z-100">
-      {/* Top right Image */}
-      <Image
-        src={images.landingimages.cookie}
-        alt="Decoration"
-        width={200}
-        height={200}
-        className=" 
-              absolute
-               -top-15
-               -right-20
-               opacity-77
-               pointer-events-none
-               select-none
-               z-1000"
-      />
-      {/* Top left Image */}
-      <Image
-        src={images.landingimages.cookie}
-        alt="Decoration"
-        width={200}
-        height={200}
-        className="
-        absolute
-         top-[1%]
-         -left-22
-         opacity-77
-         pointer-events-none
-         select-none
-         z-50"
-      />
+    <div className="relative overflow-x-hidden">
       <div className="">
         <HeroSection showCookie>
       <div className="grid grid-cols-2 gap-16">

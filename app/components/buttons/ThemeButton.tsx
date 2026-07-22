@@ -7,6 +7,7 @@ type ThemeButtonProps = {
   bgcolor: string;
   color: string;
   onClick?: () => void;
+  type?: "button" | "submit" | "reset";
   leftIcon?: ReactNode;
   rightIcon?: ReactNode;
   fontSize: number;
@@ -20,6 +21,7 @@ export function ThemeButton({
   bgcolor = "#B32B49",
   color = "#fff",
   onClick,
+  type = "button",
   leftIcon,
   rightIcon,
   fontSize = 18,
@@ -27,7 +29,7 @@ export function ThemeButton({
   paddingY = 14,
 }: ThemeButtonProps) {
   return (
-    <button
+    <button type={type}
       onClick={onClick}
       style={{
         position: "relative",

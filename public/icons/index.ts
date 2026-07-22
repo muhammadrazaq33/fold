@@ -7,6 +7,9 @@ import Tiktok from "./Tiktok";
 import Location from "./Location"
 import Watch from "./Watch";
 import Email from "./Email";
+import Start from "./Start";
+import SliderRightArrow from "./SliderRightArrow";
+import SliderLeftArrow from "./SliderLeftArrow";
 
 
-export  { checkmark , rigtharrow, Instagram, Google, Message,Tiktok, Location, Watch, Email};
+export  { checkmark , rigtharrow, Instagram, Google, Message,Tiktok, Location, Watch, Email, Start, SliderRightArrow,SliderLeftArrow};

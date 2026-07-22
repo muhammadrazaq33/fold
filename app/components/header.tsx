@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 import { images } from "../ui";
 import { ThemeButton } from "./buttons/ThemeButton";
@@ -19,8 +20,29 @@ const navItems = [
 const Header = () => {
   const pathname = usePathname();
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+useEffect(() => {
+  const hero = document.getElementById("hero-section");
+
+  const handleScroll = () => {
+    if (!hero) return;
+
+    const heroHeight = hero.offsetHeight;
+
+    setIsScrolled(window.scrollY > heroHeight - 80);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
+console.log(isScrolled);
   return (
-    <header className="fixed top-0 left-0 w-full z-[9999]">
+    <header className={`fixed top-0 left-0 w-full z-9 overflow-hidden transition-all duration-300 ease-in-out ${
+    isScrolled ? "rounded-b-[30px] shadow-lg bg-Egg-White" : "rounded-none"
+  }`}>
       <div className="px-25 py-1">
         <div className="container max-w-7xl mx-auto py-2.5 pl-5 pr-10 flex items-center justify-between">
           {/* Logo */}

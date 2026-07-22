@@ -20,5 +20,6 @@ import TakeABoxBg from "@/public/images/TakeABoxBg.png"
 import TakeABoxImg from "@/public/images/TakeABoxImg.png"
 import FooterLogo from "@/public/images/FooterLogo.svg"
 import FooterBg from "@/public/images/FooterBg.png"
+import Avatar from "@/public/images/Avatar.svg"
 
-export const landingimages = {Logo, heroimage, backgroundimage,cookie,bgcookie, aboutImg,menuImg1, menuImg2, menuImg3, FindUsBg,findUsImg, BgCoffeeImg, BrandHighlightBg, BgLocation, CategoryImg1, CategoryImg2, CategoryImg3, CategoryImg4, TakeABoxBg, TakeABoxImg,FooterLogo, FooterBg}
+export const landingimages = {Logo, heroimage, backgroundimage,cookie,bgcookie, aboutImg,menuImg1, menuImg2, menuImg3, FindUsBg,findUsImg, BgCoffeeImg, BrandHighlightBg, BgLocation, CategoryImg1, CategoryImg2, CategoryImg3, CategoryImg4, TakeABoxBg, TakeABoxImg,FooterLogo, FooterBg, Avatar}

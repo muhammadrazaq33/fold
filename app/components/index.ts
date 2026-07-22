@@ -13,8 +13,9 @@ import TakeABoxSection from "./TakeABoxSection";
 import Footer from "./Footer";
 import CurrentLocationSection from "./CurrentLocationSection";
 import ContactRoutesSection from "./ContactRoutesSection";
-import ContactForm from "./ContactForm";
+import ContactForm from "./form/ContactForm";
 import WorkWithUsSection from "./WorkWithUsSection";
+import SliderCard from "./SliderCard";
 
 
 export {
@@ -34,5 +35,6 @@ export {
   CurrentLocationSection,
   ContactRoutesSection,
   ContactForm,
-  WorkWithUsSection
+  WorkWithUsSection,
+  SliderCard
 };
