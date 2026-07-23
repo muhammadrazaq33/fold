@@ -99,7 +99,7 @@ hover:opacity-90
           justifyContent: "center",
           width: "100%",
           height: "100%",
-          gap: 1.5,
+          gap: 6,
           color: `${color}`,
           fontWeight: 700,
           fontSize,
@@ -107,7 +107,7 @@ hover:opacity-90
         }}
       >
         {leftIcon}
-        <span className="leading-none font-montserrat lg:text-[20px] text-[17px] ">{label}</span>
+        <span className="leading-none font-montserrat lg:text-[18px] text-[16px] ">{label}</span>
 <span
   className="
     ml-2
