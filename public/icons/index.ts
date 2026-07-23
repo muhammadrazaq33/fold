@@ -10,6 +10,7 @@ import Email from "./Email";
 import Start from "./Start";
 import SliderRightArrow from "./SliderRightArrow";
 import SliderLeftArrow from "./SliderLeftArrow";
+import MenuIcon from "./MenuIcon";
 
 
-export  { checkmark , rigtharrow, Instagram, Google, Message,Tiktok, Location, Watch, Email, Start, SliderRightArrow,SliderLeftArrow};
+export  { checkmark , rigtharrow, Instagram, Google, Message,Tiktok, Location, Watch, Email, Start, SliderRightArrow,SliderLeftArrow, MenuIcon};

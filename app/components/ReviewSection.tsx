@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useRef, useState } from "react";
@@ -88,28 +89,38 @@ const ReviewSection = () => {
   };
 
   return (
-    <div className="py-24 bg-white flex flex-col gap-16 relative overflow-hidden">
-      <div className="px-25">
-        <div className="container max-w-7xl mx-auto px-8 overflow-hidden">
-          <div className="flex flex-col gap-16">
+    <div className="py-14 sm:py-16 md:py-20 lg:py-24 bg-white flex flex-col gap-10 sm:gap-12 lg:gap-16 relative overflow-hidden">
+      <div className="px-4 sm:px-6 lg:px-10 xl:px-20 2xl:px-25">
+        <div className="container max-w-7xl mx-auto px-0 sm:px-4 lg:px-8 overflow-hidden">
+          <div className="flex flex-col gap-10 sm:gap-12 lg:gap-16">
             {/* content */}
             <div className="flex flex-col gap-4.5 items-center justify-center">
-              <div className="flex flex-row gap-2.5 items-center">
-                <p className="w-29.25 h-0 border [border-image:linear-gradient(90deg,rgba(255,242,197,0)_0%,#800029_100%)_1]"></p>
+              <div className="flex flex-row gap-1.5 sm:gap-2.5 items-center">
+                <p className="sm:w-29.25 w-16 h-0 border [border-image:linear-gradient(90deg,rgba(255,242,197,0)_0%,#800029_100%)_1]"></p>
 
-                <p className="text-[20px] font-normal text-Bright-Maroon font-montserrat">
+                <p className="text-[12px] sm:text-lg lg:text-[20px] font-normal text-Bright-Maroon font-montserrat">
                   What customers are saying
                 </p>
 
-                <p className="w-29.25 h-0 border [border-image:linear-gradient(90deg,#800029_0%,rgba(255,242,197,0)_100%)_1]"></p>
+                <p className="sm:w-29.25 w-16 h-0 border [border-image:linear-gradient(90deg,#800029_0%,rgba(255,242,197,0)_100%)_1]"></p>
               </div>
 
-              <p className="capitalize font-extrabold text-[60px] leading-15 text-Dune font-playfair">
+              <p className="capitalize font-extrabold text-center
+
+text-3xl
+sm:text-5xl
+md:text-6xl
+xl:text-[60px] sm:leading-15 leading-tight text-Dune font-playfair">
                 Good things unfold -{" "}
                 <span className="text-wine-red">and people notice.</span>
               </p>
 
-              <p className="text-neutral-800 text-[22px] font-normal text-center max-w-230 leading-[160%] font-montserrat">
+              <p className="text-neutral-800 text-[14px]
+sm:text-lg
+lg:text-[22px] font-normal text-center max-w-full
+sm:max-w-2xl
+lg:max-w-230 mx-auto sm:leading-7 leading-6
+lg:leading-[160%] font-montserrat">
                 Our bakes are made fresh from scratch each day, served from
                 counters full of cookies, buns, doughnuts and seasonal specials
               </p>
@@ -124,7 +135,15 @@ const ReviewSection = () => {
           loop={true}
           loopAdditionalSlides={reviews.length}
           slidesPerView="auto"
-          spaceBetween={30}
+         spaceBetween={16}
+breakpoints={{
+  640: {
+    spaceBetween: 20,
+  },
+  1024: {
+    spaceBetween: 30,
+  },
+}}
           speed={600}
           grabCursor={true}
           mousewheel={{
@@ -135,7 +154,7 @@ const ReviewSection = () => {
             swiperRef.current = swiper;
           }}
           onSlideChange={handleSlideChange}
-          className="w-full z-0 [&_.swiper-wrapper]:items-stretch"
+          className="w-full z-0 px-4 sm:px-6 lg:px-0 [&_.swiper-wrapper]:items-stretch"
         >
           {sliderReviews.map((review, index) => (
             <SwiperSlide key={index} className="!w-auto !h-auto flex">
@@ -153,7 +172,7 @@ const ReviewSection = () => {
         </Swiper>
 
 
-        <div className="flex items-center self-center gap-1">
+        <div className="flex items-center justify-center gap-1">
           {reviews.map((_, index) => (
             <button
               type="button"
@@ -163,9 +182,9 @@ const ReviewSection = () => {
               className={`
                 rounded-full
                 transition-all
-                duration-300
+                duration-500
+ease-[cubic-bezier(0.22,1,0.36,1)]
                 cursor-pointer
-                ease-in-out
                 ${
                   activeIndex === index
                     ? "w-9 h-3 bg-Bright-Maroon"

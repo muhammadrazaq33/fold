@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import RightArrow from "@/public/icons/RightArrow";
+
 
 type ThemeButtonProps = {
   label: string;
@@ -28,7 +28,7 @@ export function ThemeButton({
   paddingY = 14,
 }: ThemeButtonProps) {
   return (
-  <button
+ <button
   type={type}
   onClick={onClick}
   className="
@@ -107,7 +107,7 @@ hover:opacity-90
         }}
       >
         {leftIcon}
-        <span className="leading-none font-montserrat">{label}</span>
+        <span className="leading-none font-montserrat lg:text-[20px] text-[17px] ">{label}</span>
 <span
   className="
     ml-2

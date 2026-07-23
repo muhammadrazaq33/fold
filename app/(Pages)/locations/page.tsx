@@ -49,6 +49,8 @@ const locations = () => {
 <LocationSection
       sectionPadding="py-16 px-8"
       innerPadding="py-16"
+      innerRounded="rounded-[32px]
+    lg:rounded-[64px]"
       title={
         <>
           Unfolding <span className="text-wine-red">near you soon.</span>

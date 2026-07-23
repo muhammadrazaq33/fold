@@ -2,59 +2,90 @@
 
 import Image from "next/image";
 import RightArrow from "@/public/icons/RightArrow";
-import { AboutSection, BrandHighlightSection, FindUsOnline, HeroSection, LocationSection, MenuCategoriesSection, MenuSection, ReviewSection, TakeABoxSection, ThemeButton } from "./components";
+import {
+  AboutSection,
+  BrandHighlightSection,
+  FindUsOnline,
+  HeroSection,
+  LocationSection,
+  MenuCategoriesSection,
+  MenuSection,
+  ReviewSection,
+  TakeABoxSection,
+  ThemeButton,
+} from "./components";
 import { images } from "./ui";
 
 export default function Home() {
   return (
     <div className="relative overflow-x-hidden">
-      <div className="">
+{/* hero section  */}
+      <section className="">
         <HeroSection showCookie>
-      <div className="grid grid-cols-2 gap-16">
-        {/* first column */}
-        <div className="flex flex-col gap-8 justify-center">
-          <p className="text-[90px] font-extrabold text-Dune font-playfair leading-none">
-            Fresh Bakes. <span className="text-wine-red">Daily Rituals.</span>
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="flex flex-col md:gap-8 gap-6.5 justify-center">
+              <p
+                className="text-5xl
+sm:text-6xl
+md:text-[55px]
+lg:7xl
+xl:text-[90px] text-center
+md:text-left font-extrabold text-Dune font-playfair leading-none"
+              >
+                Fresh Bakes.{" "}
+                <span className="text-wine-red">Daily Rituals.</span>
+              </p>
 
-          <div className="flex flex-row gap-5">
-            <ThemeButton
-              label="See The Menu"
-              bgcolor="#B32B49"
-              color="#fff"
-              onClick={() => {}}
-              rightIcon={<RightArrow width={15} height={12} color="#fff" />}
-              fontSize={20}
-              paddingX={28}
-              paddingY={12}
-            />
+              <div
+                className="
+flex
+flex-col
+sm:flex-row
+lg::flex-row
+gap-3.5
+md:gap-3.5
+lg::gap-5
+justify-center
+md:justify-start
+md:items-center
+items-center
+self-center
+md:self-start
+"
+              >
+                <ThemeButton
+                  label="See The Menu"
+                  bgcolor="#B32B49"
+                  color="#fff"
+                  onClick={() => {}}
+                  rightIcon={<RightArrow width={15} height={12} color="#fff" />}
+                  fontSize={20}
+                  paddingX={28}
+                  paddingY={12}
+                />
 
-            <ThemeButton
-              label="Find us"
-              bgcolor="#333333"
-              color="#fff"
-              onClick={() => {}}
-              rightIcon={<RightArrow width={15} height={12} color="#fff" />}
-              fontSize={20}
-              paddingX={28}
-              paddingY={12}
-            />
+                <ThemeButton
+                  label="Find us"
+                  bgcolor="#333333"
+                  color="#fff"
+                  onClick={() => {}}
+                  rightIcon={<RightArrow width={15} height={12} color="#fff" />}
+                  fontSize={20}
+                  paddingX={28}
+                  paddingY={12}
+                />
+              </div>
+            </div>
+
+            <div className="flex justify-center lg:justify-end">
+              <Image src={images.landingimages.heroimage} alt="hero image" className="w-full max-w-sm sm:max-w-md lg:max-w-full h-auto"/>
+            </div>
           </div>
-        </div>
-
-        {/* second column */}
-        <div>
-          <Image
-            src={images.landingimages.heroimage}
-            alt="hero image"
-          />
-        </div>
-      </div>
-    </HeroSection>
-      </div>
-     {/* About Section */}
-     <AboutSection
-  rootPadding="py-24"
+        </HeroSection>
+      </section>
+      {/* About Section */}
+      <AboutSection
+  rootPadding="py-14 sm:py-16 md:py-20 lg:py-24"
   showLabel
   label="About"
   headingClassName="leading-none"
@@ -72,10 +103,11 @@ export default function Home() {
       <MenuSection />
       <ReviewSection />
       <FindUsOnline/>
-      <BrandHighlightSection />
+      {/* <BrandHighlightSection /> */}
       {/* location section */}
-       <LocationSection
-      innerPadding="py-24"
+      <LocationSection
+      innerPadding="py-14 sm:py-16 lg:py-24"
+      innerRounded="rounded-[0px]"
       title={
         <>
           Unfolding <span className="text-wine-red">near you soon.</span>

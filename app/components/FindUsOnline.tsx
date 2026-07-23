@@ -1,3 +1,94 @@
+// "use client";
+// import { Google, Instagram, Message, Tiktok } from "@/public/icons";
+// import { ThemeButton } from "./buttons/ThemeButton";
+// import Image from "next/image";
+// import { images } from "../ui";
+
+// export  const FindUsOnline = () => {
+//   return <div className="px-8 pb-16">
+//     <div className="p-16 rounded-[64px] bg-wine-red relative bg-[url('/images/findUsBg.png')] bg-contain bg-no-repeat bg-center overflow-hidden">
+//       <div className="container max-w-7xl mx-auto p-8 flex flex-col gap-14 relative overflow-hidden">
+//         {/* right side image */}
+//         <Image
+//           src={images.landingimages.findUsImg}
+//           width={821}
+//           height={800}
+//           className=" rotate-[-45.86deg] absolute -top-10 -right-55"
+//           alt=""
+//         />
+//         {/* content */}
+//         <div className="flex flex-col gap-4.5">
+//           <div className="flex flex-row gap-2.5 items-center">
+//             <p className="font-normal text-[20px] text-white leading-[120%] font-montserrat">
+//               Find us online
+//             </p>
+//             <p className="w-29.25 h-0 border [border-image:linear-gradient(90deg,#FFFFFF_0,rgba(255,255,255,0)_100%)_1]"></p>
+//           </div>
+//           <p className="font-extrabold text-[60px] leading-none text-white max-w-162.5 font-playfair capitalize">
+//             See what’s fresh, what’s new and where
+//             <span className="text-Egg-White"> we’re unfolding next.</span>
+//           </p>
+//           <p className="font-normal text-[22px] leading-[160%] text-neutral-50 max-w-135.5 font-montserrat">
+//             We’re starting with fresh bakes, coffee and matcha in busy everyday
+//             places — and more Fold locations are on the way.
+//           </p>
+//         </div>
+//         {/* buttons */}
+//         <div className="flex flex-row gap-4 items-center justify-between">
+//           <ThemeButton
+//             label={"Follow on Instagram"}
+//             bgcolor={"#FFF2C5"}
+//             color="#000000"
+//             onClick={function (): void {
+//               throw new Error("Function not implemented.");
+//             }}
+//             leftIcon={<Instagram />}
+//             fontSize={16}
+//             paddingX={28}
+//             paddingY={12}
+//           />
+//           <ThemeButton
+//             label={"Find us on Google"}
+//             bgcolor={"#FFF2C5"}
+//             color="#000000"
+//             onClick={function (): void {
+//               throw new Error("Function not implemented.");
+//             }}
+//             leftIcon={<Google />}
+//             fontSize={16}
+//             paddingX={28}
+//             paddingY={12}
+//           />
+//           <ThemeButton
+//             label={"Leave a review"}
+//             bgcolor={"#FFF2C5"}
+//             color="#000000"
+//             onClick={function (): void {
+//               throw new Error("Function not implemented.");
+//             }}
+//             leftIcon={<Message />}
+//             fontSize={16}
+//             paddingX={28}
+//             paddingY={12}
+//           />
+//           <ThemeButton
+//             label={"Find us on Tiktok"}
+//             bgcolor={"#FFF2C5"}
+//             color="#000000"
+//             onClick={function (): void {
+//               throw new Error("Function not implemented.");
+//             }}
+//             leftIcon={<Tiktok />}
+//             fontSize={16}
+//             paddingX={28}
+//             paddingY={12}
+//           />
+//         </div>
+//       </div>
+//     </div>
+//   </div>;
+// };
+
 "use client";
 import { Google, Instagram, Message, Tiktok } from "@/public/icons";
 import { ThemeButton } from "./buttons/ThemeButton";
@@ -5,37 +96,73 @@ import Image from "next/image";
 import { images } from "../ui";
 
 export  const FindUsOnline = () => {
-  return <div className="px-8 pb-16">
-    <div className="p-16 rounded-[64px] bg-wine-red relative bg-[url('/images/findUsBg.png')] bg-contain bg-no-repeat bg-center overflow-hidden">
-      <div className="container max-w-7xl mx-auto p-8 flex flex-col gap-14 relative overflow-hidden">
-        {/* right side image */}
-        <Image
-          src={images.landingimages.findUsImg}
-          width={821}
-          height={800}
-          className=" rotate-[-45.86deg] absolute -top-10 -right-55"
-          alt=""
-        />
-        {/* content */}
-        <div className="flex flex-col gap-4.5">
-          <div className="flex flex-row gap-2.5 items-center">
-            <p className="font-normal text-[20px] text-white leading-[120%] font-montserrat">
+  return <div className="px-4 sm:px-6 lg:px-8 pb-12 sm:pb-14 lg:pb-16">
+    <div className=" rounded-4xl
+  lg:rounded-[64px]
+
+  py-10
+  px-5
+
+  sm:py-14
+  sm:px-8
+
+  lg:p-16 bg-wine-red relative bg-[url('/images/findUsBg.png')] bg-contain bg-no-repeat bg-center overflow-hidden">
+      <div className="container max-w-7xl mx-auto  px-0
+  sm:px-4
+  lg:px-8 flex flex-col  gap-10
+  sm:gap-12
+  lg:gap-14 ">
+       
+       {/* right side image */}
+      <Image
+           src={images.landingimages.findUsImg}
+           width={821}
+           height={800}
+           className=" rotate-[-45.86deg] absolute -top-10 -right-55"
+           alt=""
+         />
+       
+ {/* content */}
+        <div className="flex flex-col gap-4 lg:gap-4.5">
+          <div className="flex items-center gap-2 sm:gap-2.5">
+            <p className="font-normal text-base
+sm:text-lg
+lg:text-[20px] text-white leading-[120%] font-montserrat">
               Find us online
             </p>
             <p className="w-29.25 h-0 border [border-image:linear-gradient(90deg,#FFFFFF_0,rgba(255,255,255,0)_100%)_1]"></p>
           </div>
-          <p className="font-extrabold text-[60px] leading-none text-white max-w-162.5 font-playfair capitalize">
+          <p className="font-extrabold text-4xl
+sm:text-5xl
+lg:text-[58px] xl:text-[60px] leading-[120%] text-white max-w-full
+lg:max-w-162.5 font-playfair capitalize">
             See what’s fresh, what’s new and where
             <span className="text-Egg-White"> we’re unfolding next.</span>
           </p>
-          <p className="font-normal text-[22px] leading-[160%] text-neutral-50 max-w-135.5 font-montserrat">
+          <p className="font-normal text-base
+sm:text-lg
+lg:text-[22px] leading-7
+lg:leading-[160%] text-neutral-50 max-w-full
+lg:max-w-135.5 font-montserrat">
             We’re starting with fresh bakes, coffee and matcha in busy everyday
             places — and more Fold locations are on the way.
           </p>
         </div>
+
+        
         {/* buttons */}
-        <div className="flex flex-row gap-4 items-center justify-between">
-          <ThemeButton
+        <div className=" grid
+
+  grid-cols-1
+  sm:grid-cols-2
+  xl:grid-cols-4
+
+  gap-4
+  lg:gap-5
+
+  items-stretch">
+     
+            <ThemeButton
             label={"Follow on Instagram"}
             bgcolor={"#FFF2C5"}
             color="#000000"
@@ -47,7 +174,8 @@ export  const FindUsOnline = () => {
             paddingX={28}
             paddingY={12}
           />
-          <ThemeButton
+       
+           <ThemeButton
             label={"Find us on Google"}
             bgcolor={"#FFF2C5"}
             color="#000000"
@@ -59,7 +187,8 @@ export  const FindUsOnline = () => {
             paddingX={28}
             paddingY={12}
           />
-          <ThemeButton
+         
+           <ThemeButton
             label={"Leave a review"}
             bgcolor={"#FFF2C5"}
             color="#000000"
@@ -71,7 +200,9 @@ export  const FindUsOnline = () => {
             paddingX={28}
             paddingY={12}
           />
-          <ThemeButton
+        
+      
+            <ThemeButton
             label={"Find us on Tiktok"}
             bgcolor={"#FFF2C5"}
             color="#000000"
@@ -83,8 +214,10 @@ export  const FindUsOnline = () => {
             paddingX={28}
             paddingY={12}
           />
+       
         </div>
       </div>
     </div>
   </div>;
 };
+

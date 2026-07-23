@@ -14,24 +14,39 @@ const HeroSection = ({
 }: CommonHeroSectionProps) => {
  
   return (
-    <div id="hero-section" className="relative max-h-250 rounded-b-[56px] bg-center bg-cover bg-no-repeat bg-[url('/images/BgImage.png')] overflow-hidden bg-Egg-White">
+    <div id="hero-section" className="relative max-h-200
+lg:max-h-250
+rounded-b-4xl
+lg:rounded-b-[56px] lg:bg-center lg:bg-cover bg-contain bg-center bg-no-repeat md:bg-[url('/images/BgImage.png')] overflow-hidden bg-Egg-White">
 
       {/* Top Right Cookie */}
       {showCookie && (
         <Image
           src={images.landingimages.cookie}
           alt="Decoration"
-          width={200}
-          height={200}
-          className="
-            absolute
-            -top-15
-            -right-20
-            opacity-77
-            pointer-events-none
-            select-none
-            z-50
-          "
+width={180}
+height={180}
+        className="
+absolute
+w-28
+lg:w-36
+xl:w-48
+hidden
+md:block
+
+-top-8
+sm:-top-10
+lg:-top-16
+
+-right-10
+sm:-right-14
+lg:-right-18
+
+opacity-70
+pointer-events-none
+select-none
+z-50
+"
         />
       )}
 
@@ -40,17 +55,31 @@ const HeroSection = ({
         <Image
           src={images.landingimages.cookie}
           alt="Decoration"
-          width={200}
-          height={200}
+          width={180}
+height={180}
           className="
-            absolute
-            top-[8%]
-            -left-22
-            opacity-77
-            pointer-events-none
-            select-none
-            z-50
-          "
+absolute
+
+w-28
+lg:w-36
+xl:w-48
+
+hidden
+md:block
+
+top-[15%]
+lg:top-[10%]
+
+-left-10
+sm:-left-14
+lg:-left-16
+xl:-left-18
+
+opacity-70
+pointer-events-none
+select-none
+z-50
+"
         />
       )}
 
@@ -62,19 +91,29 @@ const HeroSection = ({
           width={200}
           height={200}
           className="
-            absolute
-            top-110
-            right-[40%]
-            opacity-8
-            pointer-events-none
-            select-none
-            z-0
-            rotate-28
-          "
+absolute
+
+hidden
+lg:block
+
+w-36
+lg:w-52
+
+top-[65%]
+right-[38%]
+
+opacity-10
+
+pointer-events-none
+select-none
+
+rotate-28
+z-0
+"
         />
       )}
 
-      <div className="relative container max-w-7xl mx-auto px-8 pt-35 pb-10 gap-16">
+      <div className="relative container max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-8 pt-28 sm:pt-32 lg:pt-35 pb-8 sm:pb-10">
         {children}
       </div>
     </div>

@@ -29,9 +29,9 @@ const menuItems = [
 
 const MenuCategoriesSection = () => {
   return (
-    <div className="py-24 bg-white">
-      <div className="container max-w-7xl mx-auto px-8">
-        <div className="flex flex-col gap-16 items-center">
+    <div className="py-12 md:py-16 xl:py-24 bg-white">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col gap-13 xl:gap-16 items-center">
           {/* Tabs */}
           <CategoryTabs
             tabs={["Bakes", "Coffee & Matcha"]}
@@ -39,7 +39,7 @@ const MenuCategoriesSection = () => {
             onChange={(tab) => console.log(tab)}
           />
           {/* cards */}
-          <div className="grid grid-cols-4 gap-9">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 xl:gap-9 w-full">
             {menuItems.map((item, index) => (
               <div key={item.title} className="relative">
                 <CategoryCards
@@ -50,9 +50,9 @@ const MenuCategoriesSection = () => {
                 />
 
                 {/* Vertical Divider */}
-                {index !== menuItems.length - 1 && (
-                  <div className="absolute top-8 -right-4 h-55 border-r [border-image:linear-gradient(180deg,#FFFFFF_0%,#808080_50%,rgba(255,255,255,0)_100%)_1]" />
-                )}
+               {index !== menuItems.length - 1 && (
+  <div className="hidden xl:block absolute top-8 -right-4 h-55 border-r [border-image:linear-gradient(180deg,#FFFFFF_0%,#808080_50%,rgba(255,255,255,0)_100%)_1]" />
+)}
               </div>
             ))}
           </div>
@@ -63,3 +63,4 @@ const MenuCategoriesSection = () => {
 };
 
 export default MenuCategoriesSection;
+

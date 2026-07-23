@@ -51,7 +51,7 @@ const CategoryTabs = ({
   };
 
   return (
-    <div className="relative inline-flex items-center rounded-full bg-Bright-Maroon p-[5.33px]">
+    <div className="relative inline-flex items-center rounded-full bg-Bright-Maroon p-[5.33px] overflow-x-auto max-w-full">
       {/* Sliding active background */}
       <div
         className="absolute top-[5.33px] bottom-[5.33px] left-0 rounded-full bg-white transition-all duration-300 ease-out"
@@ -73,7 +73,9 @@ const CategoryTabs = ({
             }}
             type="button"
             onClick={() => handleClick(index)}
-            className={`relative z-10 font-montserrat px-7.5 py-4 text-[20px] leading-[26.67px] font-semibold rounded-full transition-colors duration-300 whitespace-nowrap cursor-pointer ${
+            className={`relative z-10 font-montserrat px-4 sm:px-6 xl:px-7.5
+py-3 xl:py-4
+text-sm sm:text-base xl:text-[20px] leading-[26.67px] font-semibold rounded-full transition-colors duration-300 whitespace-nowrap cursor-pointer ${
               isActive
                 ? "text-black"
                 : "text-white hover:text-white/90"
@@ -88,3 +90,4 @@ const CategoryTabs = ({
 };
 
 export default CategoryTabs;
+

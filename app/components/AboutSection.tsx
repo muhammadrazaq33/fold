@@ -30,15 +30,16 @@ const AboutSection = ({
 }: AboutSectionProps) => {
   return (
     <div className={rootPadding}>
-      <div className="container max-w-7xl mx-auto px-8 grid grid-cols-2 gap-10">
+      <div className="container max-w-7xl mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-8 grid grid-cols-1 lg:grid-cols-2 md:gap-10 gap-8 items-center">
 
         {/* Left Side */}
         <div
-          className={`flex flex-col gap-2.5 justify-center ${contentClassName}`}
+          className={`flex flex-col gap-2.5 justify-center text-center lg:text-left ${contentClassName}`}
         >
           {showLabel && (
-            <div className="flex flex-row gap-2.5 items-center">
-              <p className="text-Bright-Maroon font-normal font-montserrat text-[20px] leading-[120%]">
+            <div className="flex items-center justify-center lg:justify-start gap-2.5">
+               <p className="w-29.25 h-0 lg:hidden block border [border-image:linear-gradient(90deg,rgba(255,242,197,0)_0%,#800029_100%)_1]"></p>
+              <p className="text-Bright-Maroon font-normal font-montserrat text-base sm:text-lg lg:text-[20px] leading-[120%]">
                 {label}
               </p>
 
@@ -47,7 +48,12 @@ const AboutSection = ({
           )}
 
           <p
-            className={`font-extrabold text-[60px] capitalize text-Dune font-playfair ${headingClassName}`}
+            className={`font-extrabold text-4xl
+sm:text-5xl
+md:text-6xl
+xl:text-[60px]
+
+leading-none capitalize text-Dune font-playfair ${headingClassName}`}
           >
             {title}
           </p>
@@ -55,7 +61,12 @@ const AboutSection = ({
           {paragraphs.map((paragraph, index) => (
             <p
               key={index}
-              className="text-[22px] text-neutral-800 font-normal leading-[160%] font-montserrat"
+              className="text-base
+sm:text-lg
+lg:text-[22px]
+
+leading-7
+lg:leading-[160%] text-neutral-800 font-normal font-montserrat"
             >
               {paragraph}
             </p>
@@ -65,12 +76,21 @@ const AboutSection = ({
         </div>
 
         {/* Right Side */}
-        <div>
+        <div className="flex justify-center lg:justify-end">
           <Image
-            className="rounded-4xl"
-            src={image}
-            alt={imageAlt}
-          />
+  src={image}
+  alt={imageAlt}
+  className="
+    w-full
+    max-w-sm
+    sm:max-w-md
+    md:max-w-xl
+    lg:max-w-full
+    h-auto
+    rounded-3xl
+    lg:rounded-4xl
+  "
+/>
         </div>
 
       </div>
