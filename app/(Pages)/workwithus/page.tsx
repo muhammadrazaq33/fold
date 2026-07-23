@@ -1,8 +1,7 @@
 "use client"
-import { AboutSection, HeroSection, ThemeButton, WorkWithUsSection } from '@/app/components'
+import { AboutSection, HeroSection, ThemeButton } from '@/app/components'
 import { images } from '@/app/ui'
 import RightArrow from '@/public/icons/RightArrow'
-import Image from 'next/image'
 
 const WorkWithUs = () => {
   return (
